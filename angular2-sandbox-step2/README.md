@@ -48,3 +48,6 @@ Restart ng serve if you're running it, and Bootstrap 4 should be working on your
 
 ```
 NB : Don't import script, just the bootstrap.css.
+
+### 2.3 Result
+![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/2.png)
