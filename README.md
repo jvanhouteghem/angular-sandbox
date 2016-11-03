@@ -7,3 +7,4 @@ To run this project you must install :
 
 Summary : 
 - Step 1 : Create your project with Angular CLI (In progress)
+- Step 2 : First page, lets play with simple html and boostrap

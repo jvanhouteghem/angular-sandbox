@@ -1,5 +1,5 @@
 # angular2-sandbox
-Step 2 : First page
+Step 2 : First page, lets play with simple html and boostrap
 --
 
 Note : only 'src' folder will be display in github. To complete the project just use the other files in step1.
