@@ -1,25 +1,50 @@
 # angular2-sandbox
-Step 1 : Create your project with Angular CLI (In progress)
+Step 2 : First page
+--
 
-1.1 - Create project
-- ng new angular2-sandbox-step1
-- cd angular2-sandbox-step1
-- ng serve
-- Check localhost:4200 in your navigator
+Note : only 'src' folder will be display in github. To complete the project just use the other files in step1.
 
-2.2 - Try production mode
-By default Angular CLI create a big project (200 Mo...).
-You start in development mod, to try it in production you have to use the command `ng build --prod`.
-This command creates a 'dist' folder which contains a 7Mo bundle of the project.
+Ok our start page is ugly, we only have a "app works" text and a white background.
 
-dist
- |___ favicon.ico
- |___ index.html
- |___ inline.d41d8cd98f00b204e980.bundle.map
- |___ inline.js
- |___ main.94dd5c76eae2fa8b8aaf.bundle.js
- |___ main.94dd5c76eae2fa8b8aaf.bundle.js.gz
- |___ main.94dd5c76eae2fa8b8aaf.bundle.map
- |___ styles.defd4e11283d3aa66903.bundle.js
- |___ styles.defd4e11283d3aa66903.bundle.map
+Lets start by create the html skeleton which will contains : 
+- A navigation bar
+- A main horizontal div
+- A secondary horizontal div 
 
+### 2.1 Navigation bar
+- Add this code in app.component.html file : 
+```
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+```
+- Boostrap is not imported.
+The ugly way : import boostrap in index.html with : <br/>```<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">```
+
+The good way : (source - [angular-cli documentation](https://github.com/angular/angular-cli))
+``` 
+First install Bootstrap from npm:
+
+npm install bootstrap@next
+
+Finally add the Bootstrap CSS to the apps[0].styles array:
+
+"styles": [
+  "../node_modules/bootstrap/dist/css/bootstrap.css",
+  "styles.css"
+]
+
+Restart ng serve if you're running it, and Bootstrap 4 should be working on your app.
+
+```
+NB : Don't import script, just the bootstrap.css.
