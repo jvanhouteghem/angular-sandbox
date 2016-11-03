@@ -28,14 +28,14 @@ Lets start by create the html skeleton which will contains :
   </div>
 </nav>
 ```
-- Boostrap is not imported.
-The ugly way : import boostrap in index.html with : <br/>```<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">```
+### 2.2 Import bootstrap 
+- The ugly way : import boostrap in index.html with : <br/>```<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">```
 
-The good way : (source - [angular-cli documentation](https://github.com/angular/angular-cli))
+- The good way : (source - [angular-cli documentation](https://github.com/angular/angular-cli))
 ``` 
 First install Bootstrap from npm:
 
-npm install bootstrap@next
+npm install bootstrap
 
 Finally add the Bootstrap CSS to the apps[0].styles array:
 
