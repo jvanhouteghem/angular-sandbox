@@ -6,5 +6,6 @@ To run this project you must install :
 - Angular CLI (npm install -g angular-cli)
 
 Summary : 
-- Step 1 : Create your project with Angular CLI (In progress)
+- Step 1 : Create your project with Angular CLI
 - Step 2 : First page, lets play with simple html and boostrap
+- Step 3 : (todo)
