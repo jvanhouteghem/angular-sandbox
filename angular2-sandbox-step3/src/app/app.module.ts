@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { AppFirstComponent } from './firstcomponent/app.firstcomponent';
+import { FirstcomponentwithcliComponent } from './firstcomponentwithcli/firstcomponentwithcli.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppFirstComponent
+    AppFirstComponent,
+    FirstcomponentwithcliComponent
   ],
   imports: [
     BrowserModule,

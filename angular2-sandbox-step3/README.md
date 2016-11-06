@@ -1,7 +1,9 @@
 # angular2-sandbox
 Step 3 : Our first component
 
-The old way : 
+![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/Angular2SandboxStep3b.png)
+
+Without angular-cli (The old way)
 ---
 
 - Create new folder in src/app/firstcomponent
@@ -53,6 +55,21 @@ import { AppFirstComponent } from './firstcomponent/app.firstcomponent';
 export class AppModule { }
 ```
 
+- In app.component.html add :
+```
+<app-firstcomponentwithcli></app-firstcomponentwithcli>
+```
+
 Care about cache the first time you had a component !
 
-![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/Angular2SandboxStep3.png)
+With angular-cli (The old way)
+---
+
+- Run the following command : ng g component firstcomponentwithcli
+
+- In app.component.html add :
+```
+<app-firstcomponentwithcli></app-firstcomponentwithcli>
+```
+
+Delete cache to view the new component.
