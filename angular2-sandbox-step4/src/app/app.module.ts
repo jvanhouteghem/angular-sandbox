@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 
 import { AppFirstComponent } from './firstcomponent/app.firstcomponent';
 import { FirstcomponentwithcliComponent } from './firstcomponentwithcli/firstcomponentwithcli.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppFirstComponent,
-    FirstcomponentwithcliComponent
+    FirstcomponentwithcliComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

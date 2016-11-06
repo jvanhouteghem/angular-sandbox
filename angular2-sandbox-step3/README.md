@@ -73,4 +73,5 @@ With angular-cli (The nice way)
 Delete cache to see the new component.
 
 Result : 
+
 ![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/Angular2SandboxStep3b.png)
