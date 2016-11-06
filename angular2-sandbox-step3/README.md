@@ -3,7 +3,7 @@ Step 3 : Our first component
 
 ![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/Angular2SandboxStep3b.png)
 
-Without angular-cli (The old way)
+Without angular-cli (The boting way)
 ---
 
 - Create new folder in src/app/firstcomponent
@@ -62,7 +62,7 @@ export class AppModule { }
 
 Care about cache the first time you had a component !
 
-With angular-cli (The old way)
+With angular-cli (The nice way)
 ---
 
 - Run the following command : ng g component firstcomponentwithcli

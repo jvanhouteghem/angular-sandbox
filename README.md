@@ -8,4 +8,4 @@ To run this project you must install :
 Summary : 
 - Step 1 : Create your project with Angular CLI
 - Step 2 : First page, lets play with simple html and boostrap
-- Step 3 : Step 3 : Our first component
+- Step 3 : Our first component
