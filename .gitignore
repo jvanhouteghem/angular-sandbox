@@ -19,6 +19,15 @@ angular2-sandbox-step3/package.json
 angular2-sandbox-step3/protractor.conf.js
 angular2-sandbox-step3/tslint.json
 
+angular2-sandbox-step4/e2e
+angular2-sandbox-step4/node_modules
+angular2-sandbox-step4/.editorconfig
+angular2-sandbox-step4/angular-cli.json
+angular2-sandbox-step4/karma.conf.js
+angular2-sandbox-step4/package.json
+angular2-sandbox-step4/protractor.conf.js
+angular2-sandbox-step4/tslint.json
+
 # compiled output
 /dist
 /tmp

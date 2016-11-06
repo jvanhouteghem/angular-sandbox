@@ -1,9 +1,7 @@
 # angular2-sandbox
 Step 3 : Our first component
 
-![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/Angular2SandboxStep3b.png)
-
-Without angular-cli (The boting way)
+Without angular-cli (The boring way)
 ---
 
 - Create new folder in src/app/firstcomponent
@@ -72,4 +70,7 @@ With angular-cli (The nice way)
 <app-firstcomponentwithcli></app-firstcomponentwithcli>
 ```
 
-Delete cache to view the new component.
+Delete cache to see the new component.
+
+Result : 
+![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/Angular2SandboxStep3b.png)
