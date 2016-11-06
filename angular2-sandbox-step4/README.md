@@ -5,7 +5,8 @@ Step 4 : Communication between two components
 A. Start by create a new component named counter.component : "ng g component counter"
 
 
-B. CounterComponent 
+B. CounterComponent    
+
 We want to receive a message value from another component.  
 In counter.component.ts import add the following code : 
 ```
