@@ -1,3 +1,3 @@
 # angular2-sandbox
-Step 3 : Our first component
+Step 3 : Create our first component
 

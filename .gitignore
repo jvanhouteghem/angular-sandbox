@@ -1,0 +1,53 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+#Redundant
+angular2-sandbox-step2/e2e
+angular2-sandbox-step2/node_modules
+angular2-sandbox-step2/.editorconfig
+angular2-sandbox-step2/angular-cli.json
+angular2-sandbox-step2/karma.conf.js
+angular2-sandbox-step2/package.json
+angular2-sandbox-step2/protractor.conf.js
+angular2-sandbox-step2/tslint.json
+
+angular2-sandbox-step3/e2e
+angular2-sandbox-step3/node_modules
+angular2-sandbox-step3/.editorconfig
+angular2-sandbox-step3/angular-cli.json
+angular2-sandbox-step3/karma.conf.js
+angular2-sandbox-step3/package.json
+angular2-sandbox-step3/protractor.conf.js
+angular2-sandbox-step3/tslint.json
+
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# IDEs and editors
+/.idea
+/.vscode
+.project
+.classpath
+*.launch
+.settings/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db
