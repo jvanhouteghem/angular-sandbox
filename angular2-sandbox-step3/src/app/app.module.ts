@@ -5,9 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { AppFirstComponent } from './firstcomponent/app.firstcomponent';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppFirstComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +18,6 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AppFirstComponent]
 })
 export class AppModule { }
