@@ -1,13 +1,14 @@
 # angular2-sandbox
-Step 1 : Create a project with Angular CLI (In progress)
 
-1.1 - Create project
+## Step 1 : Create a project with Angular CLI (In progress)
+
+###1.1 - Create project
 - ng new angular2-sandbox-step1
 - cd angular2-sandbox-step1
 - ng serve
 - Check localhost:4200 in your navigator
 
-2.2 - Try production mode
+###2.2 - Try production mode
 
 By default Angular CLI create a big project (200 Mo...).
 
