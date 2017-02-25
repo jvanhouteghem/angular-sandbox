@@ -1,8 +1,8 @@
 # angular2-sandbox
-Step 3 : Our first component
 
-Without angular-cli (The boring way)
----
+## Step 3 : Our first component
+
+### Without angular-cli (The boring way)
 
 - Create new folder in src/app/firstcomponent
 in src/app/firstcomponent add app.firstcomponent.ts, app.firstcomponent.html and app.firstcomponent.css
@@ -60,8 +60,7 @@ export class AppModule { }
 
 Care about cache the first time you had a component !
 
-With angular-cli (The nice way)
----
+### With angular-cli (The nice way)
 
 - Run the following command : ng g component firstcomponentwithcli
 
@@ -75,3 +74,5 @@ Delete cache to see the new component.
 Result : 
 
 ![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/Angular2SandboxStep3b.png)
+
+NB : Unfortunately there is no cli command to remove a component at this moment.
