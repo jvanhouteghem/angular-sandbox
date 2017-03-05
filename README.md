@@ -10,4 +10,4 @@ Summary :
 - Step 2 : [First page, lets play with simple HTML and Bootstrap](https://github.com/jvanhouteghem/angular2-sandbox/tree/master/angular2-sandbox-step2)
 - Step 3 : [Our first component](https://github.com/jvanhouteghem/angular2-sandbox/tree/master/angular2-sandbox-step3)
 - Step 4 : [Communication between two components](https://github.com/jvanhouteghem/angular2-sandbox/tree/master/angular2-sandbox-step4)
-- Step 5 : [Our first directive (todo)](https://github.com/jvanhouteghem/angular2-sandbox/tree/master/angular2-sandbox-step5)
+- Step 5 : [Routing](https://github.com/jvanhouteghem/angular2-sandbox/tree/master/angular2-sandbox-step5)

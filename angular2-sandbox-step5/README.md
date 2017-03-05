@@ -1,52 +1,92 @@
-# angular2-sandbox
-Step 5 : Our first directive (todo)
----
+# Angular2SandboxStep5
 
-A. Start by create a new component named counter.component : "ng g component counter"
+###Initialize
 
+We restart from zero :
+- Create new project ng new angular2-sandbox-step5 (then ng-serve)
+- Create new folder in app/components/
+- cd ...
+- ng g component component1
+- add <app-component1></app-component1> in app.component.html
 
-B. CounterComponent    
+Do it again to create component2
 
-We want to receive a message value from another component.  
-In counter.component.ts import add the following code : 
+NB : angular CLI use relative path, if you use this command in root folder you will create service1 in app.
+
+###Routing
+
+A. Update app.component.html to remove <app-component1></...> and <app-component2></...> : 
+
 ```
-import { Component, OnInit, Input } from '@angular/core'; // <-- add Input
+<h1>
+  {{title}}
+</h1>
 
-@Component({
-  selector: 'app-counter',
-  templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.css']
+<ul class="nav navbar-nav">
+  <li>
+    <a routerLink="component1">Component1</a>
+  </li>
+  <li>
+    <a routerLink="component2">Component2</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet> 
+```
+
+B. Create app/app.router.ts
+
+```typescript
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { AppComponent } from './app.component';
+import { Component1Component } from './components/component1/component1.component';
+import { Component2Component } from './components/component2/component2.component';
+
+export const router: Routes = [
+    { path: '', redirectTo: 'component1', pathMatch: 'full' },
+    { path: 'component1', component: Component1Component },
+    { path: 'component2', component: Component2Component }
+];
+
+export const routes: ModuleWithProviders = RouterModule.forRoot(router);
+```
+
+C. Update app.module.ts
+
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { AppComponent } from './app.component';
+import { Component1Component } from './components/component1/component1.component';
+import { Component2Component } from './components/component2/component2.component';
+
+import { routes } from './app.router';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    Component1Component,
+    Component2Component
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    routes
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class CounterComponent implements OnInit {
+export class AppModule { }
 
-  @Input() message; // <-- add the message input variable
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
 ```
 
-- To display the message value :   
-Add in counter.component.html :
-```
-<p>app-counter : {{message}}</p>
-```
-
-C. AppComponent
-
-- We create the value that we want to pass to another component.   
-In app.component.html :    
--- If we want to pass a static value :   
-```<app-counter [message]="'static value'"></app-counter>```   
--- If we want to pass a variable (for example the title in app.component.ts) :  
-```<app-counter [message]="title"></app-counter>```
-
-Result : 
-
-![alt tag](http://vanhouteghem-jonathan.fr/wp-content/uploads/2016/11/Angular2SandboxStep4.png)
-
----
-Source : https://egghead.io/lessons/angular-2-passing-data-to-components-with-input#/tab-transcript
+See : 
+- history.pushState (https://developer.mozilla.org/en-US/docs/Web/API/History_API#Adding_and_modifying_history_entries)
+and (https://angular.io/docs/ts/latest/guide/router.html#!#base-href)
+- https://coursetro.com/posts/code/19/Angular-2-Router-&-Navigation-Tutorial

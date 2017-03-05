@@ -4,26 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { Component1Component } from './components/component1/component1.component';
-import { Component2Component } from './components/component2/component2.component';
 
-//
-import { routes } from './app.router';
-//
+import { AppFirstComponent } from './firstcomponent/app.firstcomponent';
+import { FirstcomponentwithcliComponent } from './firstcomponentwithcli/firstcomponentwithcli.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Component1Component,
-    Component2Component
+    AppFirstComponent,
+    FirstcomponentwithcliComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    routes
+    HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AppFirstComponent]
 })
 export class AppModule { }

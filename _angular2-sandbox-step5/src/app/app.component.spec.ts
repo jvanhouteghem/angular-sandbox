@@ -3,7 +3,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('App: Angular2SandboxStep5', () => {
+describe('App: Angular2SandboxStep1', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
